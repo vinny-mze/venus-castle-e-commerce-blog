@@ -1,0 +1,285 @@
+@font-face {
+  font-family: GarbataBold;
+  src: url(../fonts/GarbataTrial-Bold.ttf);
+}
+
+@font-face {
+  font-family: GarbataExtraBold;
+  src: url(../fonts/GarbataTrial-Extrabold.ttf);
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  
+}
+
+.homepage{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.home-left-section{
+  flex: 50%;
+  background-color: #A6603A;
+  color: #EFE3B8;
+  padding-left: 15px;
+  position: relative;
+  
+}
+
+.home-right-section{
+  flex: 50%;
+}
+
+.logo-name{
+  font-family: GarbataExtraBold;
+  font-size: small;
+  margin-bottom: 100px;
+}
+
+.home-description{
+  font-family: GarbataBold;
+  font-size: 35px;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.buy-button{
+  font-family: 'DM Sans', sans-serif;
+  font-weight: thin;
+  font-size: 12px;
+  background-color: transparent;
+  color:#EFE3B8;
+  border-color:#EFE3B8;
+  padding: 5px 15px;
+  border-radius: 2px;
+  border-width: 1px;
+  cursor: pointer;
+}
+
+.logo-description{
+  width: 100%;
+}
+
+.home-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-page{
+  display: flex;
+  align-items: stretch; 
+}
+
+.about-left-section{
+  width: 50%;
+}
+
+.about-right-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* To stack the elements vertically */
+  width: 50%;
+  background-color: #EFE3B8;
+  color: #A6603A;
+  text-align: center;
+  position: relative;
+}
+
+.about-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-header{
+  font-family: GarbataBold;
+  font-size: 40px;
+}
+
+.about-description{
+  position: relative;
+  padding: 10px; 
+  text-align: justify;
+  box-sizing: border-box;
+  margin: 0 10px;
+}
+
+.products-catalogue{
+  background-color: #A6603A;
+  color: #EFE3B8;
+  padding: 25px; 
+}
+
+.products-header{
+  font-family: GarbataBold;
+  font-size: 36px;
+  margin-left: 100px;
+}
+
+.products-grid{
+  display: flex;
+  justify-content: space-evenly; 
+}
+
+.products-container{
+  margin-right: 20px;
+}
+
+.products-image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+.products-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.products-description{
+  position: relative; 
+  text-align: center;
+}
+
+.products-name{
+  font-family: GarbataBold;
+}
+
+.blog{
+  background-color: #EFE3B8;
+  color: #A6603A;
+  padding: 50px;
+  display: flex;
+}
+
+.blog-left-section{
+  width: 40%;
+}
+
+.blog-header{
+  font-family: GarbataBold;
+  font-size: 36px;
+}
+
+.blog-right-section{
+  width: 60%;
+}
+
+.blog-post-container{
+  display: flex;
+}
+
+.post-image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 180px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.post-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.post-header{
+  font-family: GarbataBold;
+}
+
+.post-text{
+  padding-right: 40px;
+}
+
+.testimonial{
+  background-image: url(../images/testimonials/sunset.jpg);
+  height: 400px;
+  padding: 25px;
+}
+
+.testimonial-text{
+  color: #EFE3B8;
+  font-size: 35px;
+  text-align: center;
+  padding: 50px 100px;
+}
+
+.contacts-page{
+  background-color: #EFE3B8;
+}
+
+footer {
+  display: flex;
+}
+
+.footerLeft {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.fMenuTitle {
+  font-size: 16px;
+  color: #A6603A;
+}
+
+.fList {
+  padding: 0;
+  list-style: none;
+}
+
+.fListItem {
+  margin-bottom: 10px;
+  color: gray;
+  cursor: pointer;
+}
+
+.footerRight {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fInput {
+  padding: 5px;
+}
+
+.fButton {
+  padding: 5px;
+  background-color: #A6603A;
+  color: #EFE3B8;
+}
+
+.fIcons{
+  display: flex;
+}
+
+.fIcon{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.copyright{
+  font-weight: 300;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
