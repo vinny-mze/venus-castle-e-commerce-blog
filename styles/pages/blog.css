@@ -1,0 +1,173 @@
+@font-face {
+  font-family: GarbataBold;
+  src: url(../../fonts/GarbataTrial-Bold.ttf);
+}
+
+@font-face {
+  font-family: GarbataExtraBold;
+  src: url(../../fonts/GarbataTrial-Extrabold.ttf);
+}
+
+@font-face{
+  font-family: GarbataMedium;
+  src: url(../../fonts/GarbataTrial-Medium.ttf);
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  background-color:  #A6603A;;
+  
+}
+
+.main{
+  margin-top: 70px;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  padding-left: 15px;
+  padding-right: 15px;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+}
+
+.logo{
+  margin-top: 15px;
+}
+
+span{
+  color: #EFE3B8;
+  display: block;
+}
+
+.logo-name{
+  font-family: GarbataExtraBold;
+  font-size: small;
+}
+.page-name{
+  font-family: GarbataExtraBold;
+  font-size: 36px;
+}
+
+.search{
+  flex: 1;
+  max-width: 500px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+}
+
+.searchInput{
+  background-color: rgb(255, 255, 255, 0.8);;
+  flex: 1;
+  width: 0;
+  font-size: 16px;
+  height: 38px;
+  padding-left: 15px;
+  border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.searchButton{
+  background-color: rgb(255, 255, 255, 0.8);
+  border: none;
+  width: 45px;
+  height: 40px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  flex-shrink: 0;
+}
+
+.searchIcon{
+  height: 22px;
+  margin-left: 2px;
+  margin-top: 3px
+}
+
+
+.searchInput::placeholder{
+  font-family: Gill Sans;
+  font-weight: thin;
+  font-size: 20px;
+  color: rgb(210, 197, 197);
+}
+
+.shopping-cart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  padding: 5px;
+}
+
+.cart{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.products-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  
+}
+
+.product-container{
+  background-color: #EFE3B8;
+  color: #A6603A;
+  margin: 20px;
+  padding-top: 40px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+.product-image{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.product-rating{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ratingImage {
+  width: 20px;
+  margin-right: 6px;
+}
+
+.product-spacer{
+  margin-bottom: 10px;
+}
+
+.addToBagButton{
+  background-color: #A6603A;
+  color: #EFE3B8;
+  width: 100%;
+  padding: 8px;
+  border-radius: 50px;
+  cursor: pointer;
+  border-color: #EFE3B8;
+}
