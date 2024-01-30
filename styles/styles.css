@@ -177,6 +177,11 @@ body{
   display: flex;
 }
 
+.store-button{
+  align-items: center;
+  margin-left: 100px;
+}
+
 .post-image-container{
   display: flex;
   justify-content: center;

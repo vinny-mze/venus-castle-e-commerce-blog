@@ -21,7 +21,7 @@ body{
 }
 
 .main{
-  margin-top: 70px;
+  padding-top: 120px;
 }
 
 .header{
@@ -40,6 +40,8 @@ body{
 .logo{
   margin-top: 15px;
 }
+
+
 
 span{
   color: #EFE3B8;
@@ -105,8 +107,9 @@ span{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 35px;
-  padding: 5px;
+  height: 40px;
+  
+  position: relative;
 }
 
 .cart{
@@ -115,9 +118,27 @@ span{
   object-fit: cover;
 }
 
+.cart-quantity {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #A6603A;
+  background-color: #EFE3B8;
+  padding: 2px 7px; 
+  border-radius: 50%;
+}
+
+.grid-head{
+  font-family: GarbataMedium;
+  color: #EFE3B8;
+  padding-left: 20px;
+}
+
 .products-grid{
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(4,1fr);
   
 }
 
@@ -154,7 +175,7 @@ span{
 }
 
 .ratingImage {
-  width: 20px;
+  width: 15px;
   margin-right: 6px;
 }
 
@@ -170,4 +191,8 @@ span{
   border-radius: 50px;
   cursor: pointer;
   border-color: #EFE3B8;
+}
+
+.product-name{
+  font-family: GarbataBold;
 }
