@@ -52,6 +52,4 @@ export const essentialOils = [{
   description: "Awaken your senses with the vibrant aroma of our Pure Lemon Essential Oil, extracted from the zesty peels of sun-kissed lemons. Immerse yourself in the invigorating and refreshing essence that encapsulates the purest form of this citrus treasure.", 
   catergory: "Essential Oils"
 }
-
-
 ]

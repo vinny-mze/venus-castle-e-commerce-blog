@@ -1,0 +1,227 @@
+@font-face {
+  font-family: GarbataBold;
+  src: url(../../fonts/GarbataTrial-Bold.ttf);
+}
+
+@font-face{
+  font-family: GarbataMedium;
+  src: url(../../fonts/GarbataTrial-Medium.ttf);
+}
+
+
+body{
+  margin: 0;
+  font-family: Poppins;
+ padding: 0;
+}
+a{
+  color: unset;
+  text-decoration: none;
+}
+.container{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+  background-color: #EFE3B8;
+  color:#A6603A;
+}
+.title{
+  font-family: GarbataBold;
+  font-size: xx-large;
+  padding: 20px 0;
+}
+
+.titleSimilar{
+  color: #EFE3B8;
+  font-family: GarbataBold;
+  font-size: xx-large;
+  padding: 20px 0;
+}
+
+.listProduct .item img{
+  width: 90%;
+  filter: drop-shadow(0 50px 20px #0003);
+  border-radius: 5px;
+}
+
+.similarProducts{
+  background-color: #A6603A;
+  margin-top: 20px;
+}
+
+.listProduct{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-left: 5px;
+}
+.listProduct .item{
+  background-color: #EFE3B8;
+  padding: 20px;
+  border-radius: 20px;
+  color: #A6603A;
+  transition: 0.2s;
+}
+
+.listProduct .item:hover{
+  transform: translateY(-10px);
+}
+
+.product-image{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.product-rating{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 35%;
+}
+
+.product-spacer{
+  margin-bottom: 10px;
+}
+
+.quickView{
+  background-color: #A6603A;
+  color: #EFE3B8;
+  width: 100%;
+  padding: 8px;
+  border-radius: 50px;
+  cursor: pointer;
+  border-color: #EFE3B8;
+  text-decoration: none;
+}
+
+.product-name{
+  font-family: GarbataBold;
+}
+/* detail page */
+
+.detail{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  text-align: left;
+}
+.detail .image img{
+  width: 100%;
+  
+}
+.detail .image{
+  position: relative;
+  padding: 50px;
+}
+.detail .image::before{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  content: '';
+  z-index: -1;
+  top: 50px;
+
+}
+.detail .name{
+  font-family: GarbataMedium;
+  font-size: xxx-large;
+  padding: 40px 0 0 0;
+  margin: 0 0 10px 0;
+}
+.detail .price{
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: x-large;
+  letter-spacing: 7px;
+  margin-bottom: 20px;
+}
+.detail .buttons{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.detail .buttons button{
+  background-color: #eee;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 20px;
+  font-family: Poppins;
+  font-size: large;
+}
+
+.detail .star {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.detail .buttons i{
+  width: 15px;
+  color: #eee;
+  font-size: 22px;
+}
+.detail .buttons span{
+  
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+.detail .buttons button:nth-child(2){
+  background-color: #2F2F2F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eee;
+  box-shadow: 0 10px 20px #2F2F2F77;
+}
+.detail .description{
+  font-weight: 300;
+  padding: 20px;
+}
+/* // ipad */
+@media only screen and (max-width: 992px) {
+  .listProduct{
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .detail{
+      grid-template-columns:  40% 1fr;
+  }
+
+  .detail .star {
+    display: flex;
+    margin-left: 45%;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+  .listProduct{
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .detail{
+      text-align: center;
+      grid-template-columns: 1fr;
+  }
+  .detail .image img{
+      width: unset;
+      height: 40vh;
+  } 
+  .detail .name{
+      font-size: x-large;
+      margin: 0;
+
+  }
+  .detail .buttons button{
+      font-size: small;
+  }
+  .detail .buttons{
+      justify-content: center;
+  }
+}
