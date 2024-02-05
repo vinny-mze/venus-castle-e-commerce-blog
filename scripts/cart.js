@@ -78,6 +78,14 @@ export const cart = () =>{
     } 
 })
 
+const initApp = () => {
+        
+  if(localStorage.getItem('cart')){
+      cart = JSON.parse(localStorage.getItem('cart'));
+      refreshCartHTML();
+  }
+  }
+  initApp();
   
 }
 

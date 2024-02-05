@@ -46,20 +46,46 @@ body{
 }
 
 .buy-button{
-  font-family: 'DM Sans', sans-serif;
-  font-weight: thin;
+  font-family: sans-serif;
   font-size: 12px;
   background-color: transparent;
   color:#EFE3B8;
   border-color:#EFE3B8;
-  padding: 5px 15px;
-  border-radius: 2px;
-  border-width: 1px;
   cursor: pointer;
+  transition: background 0.5s;
+  border: 1px solid #EFE3B8;
+  padding: 14px 50px;
+  border-radius: 6px;
 }
+
+.buy-button:hover{
+  background: #EFE3B8;
+    color: #A6603A;
+    font-weight: 700;
+}
+
+.store-button a{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #EFE3B8;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #EFE3B8;
+    transition: background 0.5s;
+  }
+  
+  .store-button a:hover{
+    background: #EFE3B8;
+    color: #A6603A;
+    font-weight: 900;
+  }
 
 .logo-description{
   width: 100%;
+  margin: 50px auto;
+  
 }
 
 .home-image{
@@ -284,7 +310,15 @@ footer {
 }
 
 
+@media (max-width: 768px) { 
+  .about-header{
+    font-size: 30px;
+  }
 
+  .home-description{
+    font-size: 30px;
+  }
+}
 
 
 
