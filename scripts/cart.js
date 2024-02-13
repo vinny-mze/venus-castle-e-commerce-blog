@@ -1,4 +1,4 @@
-import { essentialOils } from "../data/data.js";
+import { products } from "../data/data.js";
 
 export const cart = () =>{
   let iconCart = document.querySelector('.shopping-cart');
@@ -38,8 +38,8 @@ export const cart = () =>{
     listHTML.innerHTML = null;
     cart.forEach(item => {
       totalQuantity = totalQuantity + item.quantity;
-      let position = essentialOils.findIndex((value) => value.id == item.product_id)
-      let info = essentialOils[position];
+      let position = products.findIndex((value) => value.id == item.product_id)
+      let info = products[position];
       let newItem = document.createElement('div');
       newItem.classList.add('item');
       newItem.innerHTML = `

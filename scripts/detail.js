@@ -1,5 +1,6 @@
-import { essentialOils } from "../data/data.js";
+import { products } from "../data/data.js";
 import { cart } from "./cart.js";
+import { generateCategoryHTML } from "./store.js";
 
 let app = document.getElementById('app');
 
@@ -17,7 +18,7 @@ const loadTemplate = () => {
 loadTemplate();
 const initApp = () => {
   let productId = new URLSearchParams(window.location.search).get('id');
-  let thisProduct = essentialOils.filter(value => value.id == productId)[0];
+  let thisProduct = products.filter(value => value.id == productId)[0];
   
     if(!thisProduct){
         window.location.href = "/";
@@ -35,7 +36,7 @@ detail.querySelector('.addCart').dataset.id = productId;
 
 let productsHTML ='';
 
-essentialOils.filter((value) => value.id !=productId).forEach((product) => {
+products.filter((value) => value.id !=productId).forEach((product) => {
   productsHTML +=`
   <div class="product-container">
             <a href="/detail.html?id=${product.id}">
