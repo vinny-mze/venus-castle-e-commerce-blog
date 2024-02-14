@@ -201,6 +201,19 @@ body{
 
 .blog-post-container{
   display: flex;
+  border-bottom:2px solid;
+  margin-bottom: 5px;
+}
+
+.read-button{
+  font-family: sans-serif;
+  font-size: 12px;
+  background-color: #A6603A;
+  color:#EFE3B8;
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 6px;
+  border: none;
 }
 
 .store-button{
